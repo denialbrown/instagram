@@ -45,6 +45,7 @@ module.exports = {
                 if (!save) {
                     return send(res, HttpStatus.BAD_REQUEST_STATUS_CODE, ErrorCode.REQUIRED_CODE, Message.USER_NOT_SAVE, null)
                 }
+                
             }
             return send(res, HttpStatus.INTERNAL_SERVER_CODE, HttpStatus.INTERNAL_SERVER_CODE, Message.SOMETHING_WENT_WRONG, null);
         } catch (error) {
