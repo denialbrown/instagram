@@ -14,7 +14,10 @@ app.use(express.urlencoded({
 app.use(fileupload())
 app.use("/uploads", express.static("./uploads"));
 
+app.use('/api',require('./routes/authUser'))
 app.use('/api',require('./routes/user'))
+app.use('/api',require('./routes/post'))
+app.use('/api',require('./routes/comment'))
 
 const swaggerDefinition = {
     openapi: '3.0.0',

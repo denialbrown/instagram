@@ -1,4 +1,3 @@
-
 /**
  * @enum {number}
  */
@@ -18,6 +17,7 @@ const ErrorCode = {
 
     REQUIRED_CODE: 2022,
     INVALID_CODE: 2023,
+    NO_RECORDED_FOUND:2033,
 };
 
 
